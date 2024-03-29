@@ -346,7 +346,7 @@ abstract class SettingsItem(
                 SingleChoiceSetting(
                     IntSetting.AUDIO,
                     titleId = R.string.audio,
-                    choicesId = R.array.AudioNames,
+                    choicesId = R.array.AudioEntries,
                     valuesId = R.array.AudioValues
                 )
             )
