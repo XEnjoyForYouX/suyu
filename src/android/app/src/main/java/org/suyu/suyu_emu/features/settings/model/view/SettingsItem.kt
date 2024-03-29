@@ -241,7 +241,7 @@ abstract class SettingsItem(
                 SingleChoiceSetting(
                     IntSetting.RENDERER_NVDEC_EMULATION,
                     titleId = R.string.renderer_nvdec_emulation,
-                    descriptionId = R.string.renderer_mvdec_emulation_description,
+                    descriptionId = R.string.renderer_nvdec_emulation_description,
                     choicesId = R.array.rendererNvdecEmulationNames,
                     valuesId = R.array.rendererNvdecEmulationValues
                 )
