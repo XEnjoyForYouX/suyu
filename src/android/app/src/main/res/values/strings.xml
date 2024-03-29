@@ -261,7 +261,7 @@
 
     <!-- Audio settings strings -->
     <string name="audio_output_engine">Output engine</string>
-    <string name="audio">Audio mode</string>
+    <string name="audio">Audio mode ( Testing )</string>
     <string name="audio_volume">Volume</string>
     <string name="audio_volume_description">Specifies the volume of audio output.</string>
 
