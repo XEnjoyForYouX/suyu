@@ -190,8 +190,8 @@ class SettingsFragmentPresenter(
     private fun addAudioSettings(sl: ArrayList<SettingsItem>) {
         sl.apply {
             add(IntSetting.AUDIO_OUTPUT_ENGINE.key)
-            add(ByteSetting.AUDIO_VOLUME.key)
             add(IntSetting.AUDIO.key)
+            add(ByteSetting.AUDIO_VOLUME.key)
         }
     }
 
