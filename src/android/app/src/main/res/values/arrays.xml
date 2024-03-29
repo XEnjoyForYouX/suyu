@@ -73,6 +73,18 @@
         <item>2</item>
     </integer-array>
 
+    <string-array name="rendererShaderNames">
+        <item>@string/renderer_shader_glsl</item>
+        <item>@string/renderer_shader_glasm</item>
+        <item>@string/renderer_shader_spirv</item>
+    </string-array>
+
+    <integer-array name="rendererShaderValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+
     <string-array name="rendererAccuracyNames">
         <item>@string/renderer_accuracy_normal</item>
         <item>@string/renderer_accuracy_high</item>
@@ -101,6 +113,17 @@
         <item>@string/renderer_vsync_fifo_relaxed</item>
     </string-array>
 
+    <string-array name="rendererVramUsageNames">
+        <item>@string/renderer_vram_usage_conservative</item>
+        <item>@string/renderer_vram_usage_aggresive</item>
+    </string-array>
+
+    <string-array name="rendererNvdecEmulationNames">
+        <item>@string/renderer_nvdec_emulation_off</item>
+        <item>@string/renderer_nvdec_emulation_cpu</item>
+        <item>@string/renderer_nvdec_emulation_gpu</item>
+    </string-array>
+
     <integer-array name="rendererResolutionValues">
         <item>0</item>
         <item>1</item>
@@ -115,6 +138,17 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
+    </integer-array>
+
+    <integer-array name="rendererVramUsageValues">
+        <item>0</item>
+        <item>1</item>
+    </integer-array>
+
+    <integer-array name="rendererNvdecEmulationValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </integer-array>
 
     <string-array name="rendererScreenLayoutNames">
@@ -275,6 +309,17 @@
         <item>4</item>
         <item>1</item>
         <item>3</item>
+    </integer-array>
+
+    <string-array name="AuidoEntries">
+        <item>@string/stereo</item>
+        <item>@string/mono</item>
+        <item>@string/surround</item>
+    </string-array>
+    <integer-array name="AudioValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </integer-array>
 
     <string-array name="anisoEntries">
