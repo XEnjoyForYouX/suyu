@@ -115,7 +115,7 @@
 
     <string-array name="rendererVramUsageNames">
         <item>@string/renderer_vram_usage_conservative</item>
-        <item>@string/renderer_vram_usage_aggresive</item>
+        <item>@string/renderer_vram_usage_aggressive</item>
     </string-array>
 
     <string-array name="rendererNvdecEmulationNames">
