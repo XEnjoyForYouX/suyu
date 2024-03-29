@@ -225,6 +225,8 @@
     <!-- Graphics settings strings -->
     <string name="renderer_accuracy">Accuracy level</string>
     <string name="renderer_resolution">Resolution (Handheld/Docked)</string>
+    <string name="renderer_resolution_slider">Reso++</string>
+    <string name="renderer_resolution_slider_description">You Can Use This Feature Choose Low - Extreme Resolution</string>
     <string name="renderer_vsync">VSync mode</string>
     <string name="renderer_vram_usage">Vram Usage mode ( Testing )</string>
     <string name="renderer_vram_usage_description">"conserve memory or make maximum usage of available video memory for performance. Has no effect on integrated graphics."\n"Aggressive mode may severely impact the performance of other applications such as recording software."</string>
