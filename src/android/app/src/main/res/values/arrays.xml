@@ -311,7 +311,7 @@
         <item>3</item>
     </integer-array>
 
-    <string-array name="AuidoEntries">
+    <string-array name="AudioEntries">
         <item>@string/stereo</item>
         <item>@string/mono</item>
         <item>@string/surround</item>
