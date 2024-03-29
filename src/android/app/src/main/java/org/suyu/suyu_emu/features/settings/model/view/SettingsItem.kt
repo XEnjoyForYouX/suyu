@@ -221,6 +221,16 @@ abstract class SettingsItem(
                 )
             )
             put(
+                SliderSetting(
+                    ShortSetting.RENDERER_RESOLUTION,
+                    titleId = R.string.renderer_resolution_slider,
+                    descriptionId = R.string.renderer_resolution_description,
+                    min = 250,
+                    max = 5000,
+                    units = "%"
+                )
+            )
+            put(
                 SingleChoiceSetting(
                     IntSetting.RENDERER_VSYNC,
                     titleId = R.string.renderer_vsync,
