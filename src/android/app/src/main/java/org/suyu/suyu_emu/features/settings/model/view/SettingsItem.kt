@@ -343,6 +343,14 @@ abstract class SettingsItem(
                 )
             )
             put(
+                SingleChoiceSetting(
+                    IntSetting.AUDIO,
+                    titleId = R.string.audio,
+                    choicesId = R.array.AudioNames,
+                    valuesId = R.array.AudioValues
+                )
+            )
+            put(
                 SliderSetting(
                     ByteSetting.AUDIO_VOLUME,
                     titleId = R.string.audio_volume,
@@ -350,15 +358,6 @@ abstract class SettingsItem(
                     min = 0,
                     max = 120,
                     units = "%"
-                )
-            )
-            put(
-                SingleChoiceSetting(
-                    IntSetting.AUDIO,
-                    titleId = R.string.audio,
-                    descriptionId = R.string.audio_description,
-                    choicesId = R.array.AudioNames,
-                    valuesId = R.array.AudioValues
                 )
             )
             put(
