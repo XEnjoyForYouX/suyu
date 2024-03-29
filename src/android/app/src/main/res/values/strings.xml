@@ -587,7 +587,7 @@
     <string name="renderer_vsync_fifo_relaxed">FIFO Relaxed</string>
 
     <!-- Renderer VramUsage -->
-    <string name="renderer_vram_usage_conservation">Conservation</string>
+    <string name="renderer_vram_usage_conservative">Conservative</string>
     <string name="renderer_vram_usage_aggressive">Aggressive</string>
 
     <!-- Renderer NvdecEmulation -->
