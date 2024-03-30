@@ -226,7 +226,6 @@ abstract class SettingsItem(
                     titleId = R.string.renderer_resolution_slider,
                     descriptionId = R.string.renderer_resolution_slider_description,
                     min = 250,
-                    interval = 0.3,
                     max = 6000,
                     units = "%"
                 )
