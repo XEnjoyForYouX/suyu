@@ -170,6 +170,8 @@ class SettingsFragmentPresenter(
             add(IntSetting.RENDERER_ACCURACY.key)
             add(IntSetting.RENDERER_RESOLUTION.key)
             add(IntSetting.RENDERER_VSYNC.key)
+            add(IntSetting.RENDERER_VRAM_USAGE.key)
+            add(IntSetting.RENDERER_NVDEC_EMULATION.key)
             add(IntSetting.RENDERER_SCALING_FILTER.key)
             add(IntSetting.FSR_SHARPENING_SLIDER.key)
             add(IntSetting.RENDERER_ANTI_ALIASING.key)
@@ -188,6 +190,7 @@ class SettingsFragmentPresenter(
     private fun addAudioSettings(sl: ArrayList<SettingsItem>) {
         sl.apply {
             add(IntSetting.AUDIO_OUTPUT_ENGINE.key)
+            add(IntSetting.AUDIO.key)
             add(ByteSetting.AUDIO_VOLUME.key)
         }
     }
@@ -963,6 +966,7 @@ class SettingsFragmentPresenter(
         sl.apply {
             add(HeaderSetting(R.string.gpu))
             add(IntSetting.RENDERER_BACKEND.key)
+            add(IntSetting.RENDERER_SHADER_BACKEND.key)
             add(BooleanSetting.RENDERER_DEBUG.key)
 
             add(HeaderSetting(R.string.cpu))

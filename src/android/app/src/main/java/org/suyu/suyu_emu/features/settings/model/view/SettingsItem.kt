@@ -230,6 +230,24 @@ abstract class SettingsItem(
             )
             put(
                 SingleChoiceSetting(
+                    IntSetting.RENDERER_VRAM_USAGE,
+                    titleId = R.string.renderer_vram_usage,
+                    descriptionId = R.string.renderer_vram_usage_description,
+                    choicesId = R.array.rendererVramUsageNames,
+                    valuesId = R.array.rendererVramUsageValues
+                )
+            )
+            put(
+                SingleChoiceSetting(
+                    IntSetting.RENDERER_NVDEC_EMULATION,
+                    titleId = R.string.renderer_nvdec_emulation,
+                    descriptionId = R.string.renderer_nvdec_emulation_description,
+                    choicesId = R.array.rendererNvdecEmulationNames,
+                    valuesId = R.array.rendererNvdecEmulationValues
+                )
+            )
+            put(
+                SingleChoiceSetting(
                     IntSetting.RENDERER_SCALING_FILTER,
                     titleId = R.string.renderer_scaling_filter,
                     choicesId = R.array.rendererScalingFilterNames,
@@ -325,6 +343,14 @@ abstract class SettingsItem(
                 )
             )
             put(
+                SingleChoiceSetting(
+                    IntSetting.AUDIO,
+                    titleId = R.string.audio,
+                    choicesId = R.array.AudioEntries,
+                    valuesId = R.array.AudioValues
+                )
+            )
+            put(
                 SliderSetting(
                     ByteSetting.AUDIO_VOLUME,
                     titleId = R.string.audio_volume,
@@ -340,6 +366,15 @@ abstract class SettingsItem(
                     titleId = R.string.renderer_api,
                     choicesId = R.array.rendererApiNames,
                     valuesId = R.array.rendererApiValues
+                )
+            )
+            put(
+                SingleChoiceSetting(
+                    IntSetting.RENDERER_SHADER_BACKEND,
+                    titleId = R.string.renderer_shader,
+                    descriptionId = R.string.renderer_shader_description,
+                    choicesId = R.array.rendererShaderNames,
+                    valuesId = R.array.rendererShaderValues
                 )
             )
             put(

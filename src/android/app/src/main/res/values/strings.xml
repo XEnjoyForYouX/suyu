@@ -226,6 +226,10 @@
     <string name="renderer_accuracy">Accuracy level</string>
     <string name="renderer_resolution">Resolution (Handheld/Docked)</string>
     <string name="renderer_vsync">VSync mode</string>
+    <string name="renderer_vram_usage">Vram Usage mode ( Testing )</string>
+    <string name="renderer_vram_usage_description">"conserve memory or make maximum usage of available video memory for performance. Has no effect on integrated graphics."\n"Aggressive mode may severely impact the performance of other applications such as recording software."</string>
+    <string name="renderer_nvdec_emulation">Nvdec Emulation ( Testing )</string>
+    <string name="renderer_nvdec_emulation_description">Choose Use Nvdec Emulation</string>
     <string name="renderer_screen_layout">Orientation</string>
     <string name="renderer_aspect_ratio">Aspect ratio</string>
     <string name="renderer_scaling_filter">Window adapting filter</string>
@@ -249,12 +253,15 @@
     <string name="cpu_debug_mode_description">Puts the CPU in a slow debugging mode.</string>
     <string name="gpu">GPU</string>
     <string name="renderer_api">API</string>
+    <string name="renderer_shader">Shader mode ( Testing )</string>
+    <string name="renderer_shader_description">"GLSL is the fastest in performance and the best in rendering accuracy."\n"GLASM backend that offers much better shader building performance at the cost of FPS and rendering accuracy."\n"SPIR-V compiles the fastest, but yields poor results on most GPU drivers."</string>
     <string name="renderer_debug">Graphics debugging</string>
     <string name="renderer_debug_description">Sets the graphics API to a slow debugging mode.</string>
     <string name="fastmem">Fastmem</string>
 
     <!-- Audio settings strings -->
     <string name="audio_output_engine">Output engine</string>
+    <string name="audio">Audio mode ( Testing )</string>
     <string name="audio_volume">Volume</string>
     <string name="audio_volume_description">Specifies the volume of audio output.</string>
 
@@ -555,6 +562,11 @@
     <string name="renderer_vulkan">Vulkan</string>
     <string name="renderer_none">None</string>
 
+    <!-- Renderer ShaderBackend -->
+    <string name="renderer_shader_glsl">Glsl</string>
+    <string name="renderer_shader_glasm">Glasm</string>
+    <string name="renderer_shader_spirv">SpirV</string>
+    
     <!-- Renderer Accuracy -->
     <string name="renderer_accuracy_normal">Normal</string>
     <string name="renderer_accuracy_high">High</string>
@@ -573,6 +585,16 @@
     <string name="renderer_vsync_mailbox">Mailbox</string>
     <string name="renderer_vsync_fifo">FIFO (On)</string>
     <string name="renderer_vsync_fifo_relaxed">FIFO Relaxed</string>
+
+    <!-- Renderer VramUsage -->
+    <string name="renderer_vram_usage_conservative">Conservative</string>
+    <string name="renderer_vram_usage_aggressive">Aggressive</string>
+
+    <!-- Renderer NvdecEmulation -->
+    <string name="renderer_nvdec_emulation_off">Off</string>
+    <string name="renderer_nvdec_emulation_cpu">Cpu</string>
+    <string name="renderer_nvdec_emulation_gpu">Gpu</string>
+
 
     <!-- Scaling Filters -->
     <string name="scaling_filter_nearest_neighbor">Nearest Neighbor</string>
@@ -638,6 +660,11 @@
     <!-- Audio output engines -->
     <string name="oboe">oboe</string>
     <string name="cubeb">cubeb</string>
+
+    <!-- Audio -->
+    <string name="stereo">stereo</string>
+    <string name="mono">mono</string>
+    <string name="surround">surround</string>
 
     <!-- Anisotropic filtering options -->
     <string name="multiplier_two">2x</string>
