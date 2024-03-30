@@ -14,7 +14,6 @@ enum class IntSetting(override val key: String) : AbstractIntSetting {
     RENDERER_SHADER_BACKEND("shader_backend"),
     RENDERER_ACCURACY("gpu_accuracy"),
     RENDERER_RESOLUTION("resolution_setup"),
-    RENDERER_RESOLUTION_SLIDER("resolution_setup"),
     RENDERER_VSYNC("use_vsync"),
     RENDERER_VRAM_USAGE("vram_usage_mode"),
     RENDERER_NVDEC_EMULATION("nvdec_emulation"),
