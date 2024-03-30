@@ -7,7 +7,6 @@ import org.suyu.suyu_emu.utils.NativeConfig
 
 enum class ShortSetting(override val key: String) : AbstractShortSetting {
     RENDERER_SPEED_LIMIT("speed_limit");
-    RENDERER_RESOLUTION_SLIDER("resolution_setup");
 
     override fun getShort(needsGlobal: Boolean): Short = NativeConfig.getShort(key, needsGlobal)
 
