@@ -222,7 +222,7 @@ abstract class SettingsItem(
             )
             put(
                 SliderSetting(
-                    ShortSetting.RENDERER_RESOLUTION,
+                    ShortSetting.RENDERER_RESOLUTION_SLIDER,
                     titleId = R.string.renderer_resolution_slider,
                     descriptionId = R.string.renderer_resolution_slider_description,
                     min = 250,
