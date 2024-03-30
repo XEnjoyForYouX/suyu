@@ -221,16 +221,6 @@ abstract class SettingsItem(
                 )
             )
             put(
-                SliderSetting(
-                    IntSetting.RENDERER_RESOLUTION_SLIDER,
-                    titleId = R.string.renderer_resolution_slider,
-                    descriptionId = R.string.renderer_resolution_slider_description,
-                    min = 250,
-                    max = 6000,
-                    units = "%"
-                )
-            )
-            put(
                 SingleChoiceSetting(
                     IntSetting.RENDERER_VSYNC,
                     titleId = R.string.renderer_vsync,
