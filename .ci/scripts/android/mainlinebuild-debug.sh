@@ -12,7 +12,7 @@ export ANDROID_KEY_ALIAS="${PLAY_ANDROID_KEY_ALIAS}"
 export ANDROID_KEYSTORE_PASS="${PLAY_ANDROID_KEYSTORE_PASS}"
 export SERVICE_ACCOUNT_KEY_PATH="${GITHUB_WORKSPACE}/sa.json"
 base64 --decode <<< "${MAINLINE_SERVICE_ACCOUNT_KEY_B64}" > "${SERVICE_ACCOUNT_KEY_PATH}"
-./gradlew "publishMainlineDebugBundle"
+./gradlew "publishMainlinerelWithDebInfoBundle"
 
 ccache -s
 
