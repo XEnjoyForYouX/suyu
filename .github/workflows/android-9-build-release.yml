@@ -7,6 +7,11 @@ on:
  workflow_dispatch:
   push:
     tags: [ "*" ]
+  inputs:
+  type:
+        description: 'select flavor to build(default: debug)'
+        required: false
+        default: 'debug'
   
 jobs:
   android:
