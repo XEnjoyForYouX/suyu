@@ -26,7 +26,7 @@ jobs:
       run: |
         mkdir -p mirror/.github/workflows/
         cp .github/workflows/mirror.yml mirror/.github/workflows/
-        cp .github/workflows/android-9-build.yml mirror/.github/workflows/
+        cp .github/workflows/android-9-build-release.yml mirror/.github/workflows/
         cp .github/dependabot.yml mirror/.github/
 
     - name: Commit and force push to GitHub
