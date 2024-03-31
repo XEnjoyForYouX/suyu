@@ -9,7 +9,7 @@ ccache -s
 
 BUILD_FLAVOR="mainline"
 
-BUILD_TYPE=".debug"
+BUILD_TYPE="release"
 if [ "${GITHUB_REPOSITORY}" == "suyu/suyu" ]; then
     BUILD_TYPE="relWithDebInfo"
 fi
