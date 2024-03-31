@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: Android9
     permissions: write-all
-    if: ${{github.repository == 'XEnjoyForYouX/suyu' }}
+    if: ${{github.repository == 'XJustForYouX/suyu' }}
     steps:
       - name: 'Show If New Changes'
         run: echo ${{ needs.syncro.outputs.isUpdated }}
