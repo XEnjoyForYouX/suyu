@@ -24,8 +24,8 @@ jobs:
       - name: Modify Min Android 9
         run: |
             sed -i "s+minSdk = 30+minSdk = 28+" src/android/app/build.gradle.kts
-            sed -i "s+BUILD_FLAVOR=\"mainline\"+BUILD_FLAVOR=\"mainline\"+" .ci/scripts/android/build-debug.sh
-            sed -i "s+BUILD_FLAVOR=\"mainline\"+BUILD_FLAVOR=\"mainline\"+" .ci/scripts/android/upload-debug.sh
+            sed -i "s+BUILD_FLAVOR=\"mainline\"+BUILD_FLAVOR=\"mainline\"+" .ci/scripts/android/builddebug.sh
+            sed -i "s+BUILD_FLAVOR=\"mainline\"+BUILD_FLAVOR=\"mainline\"+" .ci/scripts/android/uploaddebug.sh
             sed -i "s+#ifndef _GNU_SOURCE+#ifdef ANDROID\n#include <android/sharedmem.h>\n#endif\n#ifndef _GNU_SOURCE+" src/common/host_memory.cpp
             sed -i "s+#if defined(__FreeBSD__) +#ifdef ANDROID\n\t\tfd = ASharedMemory_create(\"HostMemory\", backing_size);\n#elif  define(__FreeBSD__) +" src/common/host_memory.cpp
             sed -i "s+// Defined to extend the file with zeros+\n#ifndef ANDROID\n// Defined to extend the file with zeros+" src/common/host_memory.cpp
@@ -57,13 +57,13 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y ccache apksigner glslang-dev glslang-tools
       - name: Build
-        run: ./.ci/scripts/android/build-debug.sh
+        run: ./.ci/scripts/android/builddebug.sh
         env:
           ANDROID_KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE_B64 }}
           ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           ANDROID_KEYSTORE_PASS: ${{ secrets.ANDROID_KEYSTORE_PASS }}
       - name: Copy artifacts
-        run: ./.ci/scripts/android/upload-debug.sh
+        run: ./.ci/scripts/android/uploaddebug.sh
       - name: Upload
         uses: actions/upload-artifact@v3
         with:
