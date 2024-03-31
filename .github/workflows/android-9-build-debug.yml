@@ -63,7 +63,7 @@ jobs:
           ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           ANDROID_KEYSTORE_PASS: ${{ secrets.ANDROID_KEYSTORE_PASS }}
       - name: Copy artifacts
-        run: ./.ci/scripts/android/uploaddebug.sh
+        run: chmod +x ./.ci/scripts/android/uploaddebug.sh
       - name: Upload
         uses: actions/upload-artifact@v3
         with:
