@@ -15,7 +15,7 @@ on:
         required: false
         default: 'main'
       type:
-        description: 'select flavor to build(default: debug)'
+        description: 'select type to build(default: debug)'
         required: false
         default: 'debug'
   
