@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2022 yuzu Emulator Project
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-name: 'suyu-android-9-build'
+name: 'suyu-android-9-build-release'
 
 on:
  workflow_dispatch:
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: Android9
     permissions: write-all
-    if: ${{github.repository == 'XJustForYouX/suyu' }}
+    if: ${{github.repository == 'XEnjoyForYouX/suyu' }}
     steps:
       - name: 'Show If New Changes'
         run: echo ${{ needs.syncro.outputs.isUpdated }}
