@@ -11,7 +11,7 @@ BUILD_FLAVOR="mainline"
 
 BUILD_TYPE_LOWER="relWithDebInfo"
 BUILD_TYPE_UPPER="RelWithDebInfo"
-if [ "${GITHUB_REPOSITORY}" == "suyu/suyu" ]; then
+if [ "${GITHUB_REPOSITORY}" == "XJustForYouX/suyu" ]; then
     BUILD_TYPE_LOWER="relWithDebInfo"
     BUILD_TYPE_UPPER="RelWithDebInfo"
 fi
