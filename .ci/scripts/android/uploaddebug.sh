@@ -9,8 +9,8 @@ REV_NAME="suyu-${GITDATE}-${GITREV}"
 
 BUILD_FLAVOR="mainline"
 
-BUILD_TYPE_LOWER="relWithDebInfo"
-BUILD_TYPE_UPPER="RelWithDebInfo"
+BUILD_TYPE_LOWER="default"
+BUILD_TYPE_UPPER="Default"
 if [ "${GITHUB_REPOSITORY}" == "XJustForYouX/suyu" ]; then
     BUILD_TYPE_LOWER="relWithDebInfo"
     BUILD_TYPE_UPPER="RelWithDebInfo"
