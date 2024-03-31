@@ -5,11 +5,8 @@ name: 'suyu-android-9-build-release'
 
 on:
  workflow_dispatch:
-  inputs:
-  type:
-        description: 'select flavor to build(default: debug)'
-        required: true
-        default: 'debug'
+  push:
+    tags: [ "*" ]
   
 jobs:
   android:
