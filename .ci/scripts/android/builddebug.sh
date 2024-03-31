@@ -9,8 +9,8 @@ ccache -s
 
 BUILD_FLAVOR="mainline"
 
-BUILD_TYPE="relWithDebInfo"
-if [ "${GITHUB_REPOSITORY}" == "XJustForYouX/suyu" ]; then
+BUILD_TYPE="default"
+if [ "${GITHUB_REPOSITORY}" == "suyu/suyu" ]; then
     BUILD_TYPE="relWithDebInfo"
 fi
 
