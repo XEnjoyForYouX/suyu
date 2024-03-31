@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2022 yuzu Emulator Project
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-name: 'suyu-android-9-build-release'
+name: 'suyu-android-9-build-debug'
 
 on:
  workflow_dispatch:
